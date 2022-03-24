@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            padding: 15px 30px;
+            border-bottom: 4px solid rgb(96, 38, 172);
+            font-weight: 500;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(218, 168, 233);
+        }
+
+        .top {
+            padding: 0 50px;
+            color: rgb(20, 20, 19);
+        }
+
+        .main {
+            width: 100%;
+            height: 65rem;
+            background-color: rgb(221, 212, 212);
+            /* padding: 10px 10px; */
+            display: flex;
+
+        }
+
+        .grid {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 250px;
+            border: 1px solid blueviolet;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(156, 35, 187);
+            color: white;
+            margin: 10px 10px;
+            animation-name: example;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        .card:hover {
+            /* animation-name: example;
+            animation-duration: 2s; */
+            cursor: pointer;
+        }
+
+        @keyframes example {
+
+            50% {
+                transform: scale(0.8);
+                background-color: rgb(98, 2, 110);
+            }
+
+            100% {
+                width: 250px;
+            }
+        }
+
+
+        .card img {
+            /* width: 200px; */
+            height: 200px;
+            margin-top: 5px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .temp {
+            display: flex;
+            justify-content: space-around;
+            margin: 5px 10px;
+            font-size: 0.8rem;
+        }
+
+        .left {
+            width: 70%;
+            border: 1px solid blueviolet;
+            background-color: rgb(197, 182, 230);
+        }
+
+        .right {
+            width: 30%;
+            background-color: rgb(100, 96, 96);
+            padding: 10px 5px;
+            /* display: flex;
+            justify-content: space-around;
+            flex-direction: column; */
+        }
+        .grid1{
+            /* display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: center; */
+
+        }
+        .card1{
+            margin: 10px 10px;
+            background-color: white;
+            border: 2px solid grey;
+            border-radius: 5px;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            padding: 1px 60px;
+            background-color: rgb(192, 181, 181);
+            font-size: 0.8rem;
+        }
+        .right header{
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+        #grid_header {
+            margin: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .h2 {
+            padding: 10px;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .product_name{
+            background-color: rgb(56, 71, 211);
+            text-align: center;
+            padding: 6px 0;
+            color: white;
+            border-bottom: 3px solid black;
+        }
+
+        .para {
+            text-align: center;
+            font-size: 0.9rem;
+            color: rgb(180, 219, 231);
+            margin: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <header id="header">
+            <div class="top">DashBoard</div>
+            <div class="top">Clothing Mart</div>
+        </header>
+        <div class="main">
+            <div class="left">
+                <h1 id="grid_header">Top Selling Product</h1>
+                <div class="grid">
+                    <!-- card1 -->
+                    <div class="card">
+                        <img src="/dashboard/i1.jpg" alt="Product image">
+                        <div>
+                            <h2 class="h2">Ruffle Dress</h2>
+                            <p class="para">Organic and upcycled fashions used to be considered too pricey, but now even
+                                world-renowned fashion companies like H & M are debuting sustainable clothing lines with
+                                great pricing.
+                            </p>
+                            <div class="temp">
+                                <div>Prise : </div>
+                                <div>47 RS.</div>
+                            </div>
+                            <div class="temp">
+                                <div>Number of Product sell : </div>
+                                <div>130</div>
+                            </div>
+                            <div class="temp">
+                                <div>Total profit : </div>
+                                <div>340 RS</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card2 -->
+                    <div class="card">
+                        <img src="/dashboard/i2.jpg" alt="Product image">
+                        <div>
+                            <h2 class="h2">Puhha</h2>
+                            <p class="para"> Organic and upcycled fashions used to be considered too pricey, but now
+                                even world-renowned fashion companies like H & M are debuting sustainable clothing lines
+                                with great pricing.
+                            </p>
+                            <div class="temp">
+                                <div>Prise : </div>
+                                <div>35 RS.</div>
+                            </div>
+                            <div class="temp">
+                                <div>Number of Product sell : </div>
+                                <div>97</div>
+                            </div>
+                            <div class="temp">
+                                <div>Total profit : </div>
+                                <div>310 RS</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card3 -->
+                    <div class="card">
+                        <img src="/dashboard/i3.jpg" alt="Product image">
+                        <div>
+                            <h2 class="h2">Bleshi</h2>
+                            <p class="para"> Organic and upcycled fashions used to be considered too pricey, but now
+                                even world-renowned fashion companies like H & M are debuting sustainable clothing lines
+                                with great pricing.
+                            </p>
+                            <div class="temp">
+                                <div>Prise : </div>
+                                <div>35 RS.</div>
+                            </div>
+                            <div class="temp">
+                                <div>Number of Product sell : </div>
+                                <div>98</div>
+                            </div>
+                            <div class="temp">
+                                <div>Total profit : </div>
+                                <div>290 RS</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card4 -->
+                    <div class="card">
+                        <img src="/dashboard/i4.jpg" alt="Product image">
+                        <div>
+                            <h2 class="h2">Hashline</h2>
+                            <p class="para"> Organic and upcycled fashions used to be considered too pricey, but now
+                                even world-renowned fashion companies like H & M are debuting sustainable clothing lines
+                                with great pricing.
+                            </p>
+                            <div class="temp">
+                                <div>Prise : </div>
+                                <div>47 RS.</div>
+                            </div>
+                            <div class="temp">
+                                <div>Number of Product sell : </div>
+                                <div>59</div>
+                            </div>
+                            <div class="temp">
+                                <div>Total profit : </div>
+                                <div>247 RS</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card5 -->
+                    <div class="card">
+                        <img src="/dashboard/i5.jpg" alt="Product image">
+                        <div>
+                            <h2 class="h2">Buffi</h2>
+                            <p class="para">Organic and upcycled fashions used to be considered too pricey, but now even
+                                world-renowned fashion companies like H & M are debuting sustainable clothing lines with
+                                great pricing.
+                            </p>
+                            <div class="temp">
+                                <div>Prise : </div>
+                                <div>29 RS.</div>
+                            </div>
+                            <div class="temp">
+                                <div>Number of Product sell : </div>
+                                <div>36</div>
+                            </div>
+                            <div class="temp">
+                                <div>Total profit : </div>
+                                <div>150 RS</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card6-->
+                    <div class="card">
+                        <img src="/dashboard/i6.jpg" alt="Product image">
+                        <div>
+                            <h2 class="h2">HashLine</h2>
+                            <p class="para"> Organic and upcycled fashions used to be considered too pricey, but now
+                                even world-renowned fashion companies like H & M are debuting sustainable clothing lines
+                                with great pricing.
+                            </p>
+                            <div class="temp">
+                                <div>Prise : </div>
+                                <div>150 RS.</div>
+                            </div>
+                            <div class="temp">
+                                <div>Number of Product sell : </div>
+                                <div>15</div>
+                            </div>
+                            <div class="temp">
+                                <div>Total profit : </div>
+                                <div>60 RS</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- left section -->
+            <div class="right">
+                <header>
+                    Lestest sold
+                </header>
+                <div class=" grid1">
+                    <!-- p1 -->
+                    <div class="card1">
+                        <div class="product_name">
+                            Buffi
+                        </div>
+                        <div class="row" style="padding-top: 10px;">
+                            <div>Sold TO:</div>
+                            <div>Sammrudhi</div>
+                        </div>
+                        <div class="row">
+                            <div>Prise</div>
+                            <div>35 Rs.</div>
+                        </div>
+                        <div class="row">
+                            <div>Count</div>
+                            <div>3</div>
+                        </div>
+                        <div class="row">
+                            <div>Total Prise</div>
+                            <div>150 Rs</div>
+                        </div>
+                    </div>
+                    <!-- p1 -->
+                    <div class="card1">
+                        <div class="product_name">
+                            Buffi
+                        </div>
+                        <div class="row" style="padding-top: 10px;">
+                            <div>Sold TO:</div>
+                            <div>Sammrudhi</div>
+                        </div>
+                        <div class="row">
+                            <div>Prise</div>
+                            <div>35 Rs.</div>
+                        </div>
+                        <div class="row">
+                            <div>Count</div>
+                            <div>3</div>
+                        </div>
+                        <div class="row">
+                            <div>Total Prise</div>
+                            <div>150 Rs</div>
+                        </div>
+                    </div>
+                    <!-- p1 -->
+                    <div class="card1">
+                        <div class="product_name">
+                            Buffi
+                        </div>
+                        <div class="row" style="padding-top: 10px;">
+                            <div>Sold TO:</div>
+                            <div>Sammrudhi</div>
+                        </div>
+                        <div class="row">
+                            <div>Prise</div>
+                            <div>35 Rs.</div>
+                        </div>
+                        <div class="row">
+                            <div>Count</div>
+                            <div>3</div>
+                        </div>
+                        <div class="row">
+                            <div>Total Prise</div>
+                            <div>150 Rs</div>
+                        </div>
+                    </div>
+                    <!-- p1 -->
+                    <div class="card1">
+                        <div class="product_name">
+                            Buffi
+                        </div>
+                        <div class="row" style="padding-top: 10px;">
+                            <div>Sold TO:</div>
+                            <div>Sammrudhi</div>
+                        </div>
+                        <div class="row">
+                            <div>Prise</div>
+                            <div>35 Rs.</div>
+                        </div>
+                        <div class="row">
+                            <div>Count</div>
+                            <div>3</div>
+                        </div>
+                        <div class="row">
+                            <div>Total Prise</div>
+                            <div>150 Rs</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
